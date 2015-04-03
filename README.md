@@ -1,6 +1,8 @@
 # shift-arguments
 Shift javascript function arguments for better integration with different frameworks
 
+    npm install shift-arguments
+
 ## Usage
 
 **Delete arguments**
