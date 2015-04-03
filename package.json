@@ -1,0 +1,30 @@
+{
+  "name": "shift-arguments",
+  "version": "1.0.0",
+  "description": "Shift javascript function arguments for better integration with different frameworks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha --report html --dir ./report/coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://schornio@github.com/schornio/shift-arguments.git"
+  },
+  "keywords": [
+    "shift",
+    "arguments",
+    "function",
+    "core"
+  ],
+  "author": "Thomas Schorn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schornio/shift-arguments/issues"
+  },
+  "homepage": "https://github.com/schornio/shift-arguments",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.1"
+  }
+}
