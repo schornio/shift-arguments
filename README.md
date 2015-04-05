@@ -9,6 +9,8 @@ Shift javascript function arguments for better integration with different framew
 
 **Delete arguments**
 
+    var shiftArguments = require('shift-arguments');
+
     function testFunc (result) {
 
     }
@@ -21,6 +23,8 @@ Shift javascript function arguments for better integration with different framew
 
 **Add empty arguments**
 
+    var shiftArguments = require('shift-arguments');
+
     function testFunc (error, result) {
 
     }
@@ -30,3 +34,23 @@ Shift javascript function arguments for better integration with different framew
     }
 
     doSthAsync(shiftArguments(testFunc, 1));
+
+## Examples
+
+**Promise to callback**
+
+    var Promise = require('bluebird');
+    var shiftArguments = require('shift-arguments');
+
+    var fs = Promise.promisifyAll(require("fs"));
+
+    function getConfig(callback) {
+      fs.readFileAsync("myfile.json")
+        .then(JSON.parse)
+        .then(shiftArguments(callback, 1))
+        .catch(callback);
+    }
+
+    getConfig(function(error, config)) {
+      //Handle error and result as expected
+    });
