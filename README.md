@@ -1,4 +1,6 @@
 # shift-arguments
+[![Build Status](https://travis-ci.org/schornio/shift-arguments.svg?branch=master)](https://travis-ci.org/schornio/shift-arguments)
+
 Shift javascript function arguments for better integration with different frameworks
 
     npm install shift-arguments
