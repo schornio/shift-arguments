@@ -1,6 +1,6 @@
 {
   "name": "shift-arguments",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shift javascript function arguments for better integration with different frameworks.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://schornio@github.com/schornio/shift-arguments.git"
+    "url": "https://github.com/schornio/shift-arguments.git"
   },
   "keywords": [
     "shift",

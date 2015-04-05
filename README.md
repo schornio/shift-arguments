@@ -42,10 +42,10 @@ Shift javascript function arguments for better integration with different framew
     var Promise = require('bluebird');
     var shiftArguments = require('shift-arguments');
 
-    var fs = Promise.promisifyAll(require("fs"));
+    var fs = Promise.promisifyAll(require('fs'));
 
     function getConfig(callback) {
-      fs.readFileAsync("myfile.json")
+      fs.readFileAsync('myfile.json')
         .then(JSON.parse)
         .then(shiftArguments(callback, 1))
         .catch(callback);
